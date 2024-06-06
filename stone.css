@@ -1,0 +1,63 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #ffebcd; /* Light color background */
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-image: url('https://img.youtube.com/vi/7zvKewchaAI/sddefault.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+}
+
+header {
+     /* Tomato color */
+    color: rgb(219, 16, 16);
+    padding: 20px;
+    width: 100%;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+header h1 {
+    margin: 0;
+    font-size: 36px;
+}
+
+.game-container {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+.choices button {
+    padding: 15px 30px;
+    margin: 10px;
+    font-size: 18px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    background-color: #4caf50; /* Green */
+    color: white;
+    transition: background-color 0.3s;
+}
+
+.choices button:hover {
+    background-color: #45a049; /* Darker green */
+}
+
+.result p {
+    font-size: 18px;
+    margin: 10px 0;
+    color: #333; /* Dark grey for better readability */
+}
+
+.result span {
+    font-weight: bold;
+    color: #ff6347; /* Tomato color to match header */
+}

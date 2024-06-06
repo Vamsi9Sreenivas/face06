@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stone Paper Scissors</title>
+    <link rel="stylesheet" href="stone.css">
+</head>
+<body>
+    <header>
+        <h1>Stone Paper Scissors</h1>
+    </header>
+    <div class="game-container">
+        <div class="choices">
+            <button onclick="playGame('stone')">Stone</button>
+            <button onclick="playGame('paper')">Paper</button>
+            <button onclick="playGame('scissors')">Scissors</button>
+        </div>
+        <div class="result">
+            <p id="user-choice">Your choice: <span></span></p>
+            <p id="computer-choice">Computer's choice: <span></span></p>
+            <p id="game-result">Result: <span></span></p>
+        </div>
+    </div>
+    <script src="stone.js"></script>
+</body>
+</html>
