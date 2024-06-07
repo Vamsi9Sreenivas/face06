@@ -68,3 +68,11 @@ function searchBooks() {
         `;
     }).join('');
 }
+function logout() {
+    localStorage.removeItem('loggedInUser');
+    location.href = 'dashboard.html';
+}
+
+function redirectToDashboard() {
+    location.href = 'book-index.html';
+}
