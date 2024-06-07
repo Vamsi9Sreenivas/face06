@@ -8,16 +8,36 @@
 </head>
 <body>
     <div class="container">
-        <h1>Welcome to the Library</h1>
+        <div class="header">
+            <h1>Welcome to the Library</h1>
+            <button id="logout-button" onclick="logout()">Logout</button>
+        </div>
         <div id="search-container">
             <input type="text" id="search-bar" placeholder="Search by Book ID, Name, Author">
+            <div class="custom-select-wrapper">
+                <div class="custom-select">
+                    <div class="custom-select-trigger">
+                        <span>Select Genre</span>
+                        <div class="arrow"></div>
+                    </div>
+                    <div class="custom-options">
+                        <span class="custom-option" data-value="">Select Genre</span>
+                        <span class="custom-option" data-value="action">Action</span>
+                        <span class="custom-option" data-value="comedy">Comedy</span>
+                        <span class="custom-option" data-value="academics">Academics</span>
+                        <span class="custom-option" data-value="science fiction">Science Fiction</span>
+                        <span class="custom-option" data-value="fantasy">Fantasy</span>
+                        <span class="custom-option" data-value="anime">Anime</span>
+                    </div>
+                </div>
+            </div>
             <button onclick="searchBooks()">Search</button>
         </div>
         <div id="book-list">
             <!-- Books will be listed here -->
         </div>
     </div>
-    <button id="logout-button" onclick="redirectToDashboard()">Logout</button>
     <script src="book-script.js"></script>
 </body>
 </html>
+
