@@ -1,0 +1,20 @@
+.movie-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    list-style-type: none;
+    padding: 0;
+}
+
+.movie {
+    margin: 20px;
+    padding: 20px;
+    background-color: antiquewhite;
+    border-radius: 8px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    width: calc(33.33% - 40px); /* Adjust width for 3 columns with margins */
+    max-width: 200px;
+}
+body{
+    background-image: url('https://papers.co/wallpaper/papers.co-av36-cloud-town-fantasy-anime-liang-xing-illustration-art-green-29-wallpaper.jpg');
+}
